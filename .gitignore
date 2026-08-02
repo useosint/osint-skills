@@ -1,0 +1,25 @@
+# OSINT working data — never commit case material
+cases/
+evidence/
+*.case
+*.kml
+*.gpx
+
+# Secrets & API keys
+.env
+.env.*
+*.key
+config.local.*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
