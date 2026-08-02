@@ -8,6 +8,7 @@ Reconnaissance · Attribution · GEOINT · Breach checks · Due diligence
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Skills](https://img.shields.io/badge/skills-28-brightgreen.svg)](#workflows--you-type-these)
+[![skills.sh](https://img.shields.io/badge/skills.sh-listed-8A2BE2.svg)](https://www.skills.sh/useosint/osint-skills)
 [![Works with](https://img.shields.io/badge/Cursor%20·%20Claude%20·%20agents-black.svg?logo=anthropic)](#install)
 [![Ethics](https://img.shields.io/badge/authorized%20use%20only-red.svg)](ETHICS.md)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](CONTRIBUTING.md)
