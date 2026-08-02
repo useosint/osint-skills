@@ -38,9 +38,20 @@ for dir in "$skills_dir"/*/; do
   fi
 
   lines="$(wc -l < "$f" | tr -d ' ')"
-  if [[ "$lines" -gt 500 ]]; then
-    echo "FAIL $name: $lines lines (max 500)"; errors=$((errors + 1))
+  if [[ "$lines" -gt 300 ]]; then
+    echo "FAIL $name: $lines lines (max 300 — move lookup tables into reference/)"
+    errors=$((errors + 1))
+  elif [[ "$lines" -lt 100 ]]; then
+    echo "WARN $name: only $lines lines — likely too thin to be worth installing"
   fi
+
+  # Every relative markdown link must resolve.
+  while read -r target; do
+    [[ -z "$target" ]] && continue
+    if [[ ! -e "$dir/$target" ]]; then
+      echo "FAIL $name: broken link to $target"; errors=$((errors + 1))
+    fi
+  done < <(grep -o '](\./[^)]*\|](reference/[^)]*' "$f" | sed 's/^](//')
 done
 
 echo "----"
