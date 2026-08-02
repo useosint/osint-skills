@@ -56,6 +56,34 @@ them current. Restart your agent afterward.
 For a single project instead of your whole machine, drop the `skills/` folder
 into that repo's `.cursor/skills/`.
 
+## Where to start
+
+Pick the workflow that matches whatever you're holding. If you don't know,
+`osint-investigation` routes you.
+
+```mermaid
+flowchart TD
+    Q{What do you<br/>already have?}
+    Q -->|a real name| P[person-osint]
+    Q -->|a company / brand| C[company-osint]
+    Q -->|a domain or IP| D[domain-osint]
+    Q -->|a username| U[username-osint]
+    Q -->|an email| E[email-osint]
+    Q -->|a phone number| PH[phone-osint]
+    Q -->|a photo / video| G[geoint-photo]
+    Q -->|a social profile| S[social-media-osint]
+    Q -->|no idea| R([osint-investigation])
+    R -.picks one.-> Q
+    P --> RPT[[osint-report]]
+    C --> RPT
+    D --> RPT
+    U --> RPT
+    E --> RPT
+    PH --> RPT
+    G --> RPT
+    S --> RPT
+```
+
 ## Workflows — you type these
 
 | Skill | Does |
@@ -96,11 +124,45 @@ into that repo's `.cursor/skills/`.
 
 ## How a case actually moves
 
-It's a chain of pivots. One thing you know — an email, a handle, a domain, a
-photo, a wallet — turns into the next thing, until the picture holds together
-under more than one source. The workflows drive the pivots; the technique skills
-are the individual moves; the report is where it all gets written down with
-citations. Nothing gets called a fact off a single weak match.
+It's a chain of pivots. One thing you know turns into the next, until the
+picture holds together under more than one source. Start with an email and it
+can unfold like this:
+
+```mermaid
+flowchart LR
+    E[email] --> B[breach-data-analysis]
+    E --> V[validate + Gravatar]
+    B --> U[reused username]
+    B --> N[name / fields leaked]
+    U --> A[accounts across platforms]
+    V --> N
+    A --> PH[posted photos]
+    A --> GH[code repos]
+    PH --> GEO[home / work location]
+    N --> PR{{corroborated identity}}
+    GEO --> PR
+    GH --> PR
+    PR --> RPT[[osint-report]]
+```
+
+Every hop is one of the technique skills; nothing gets called a fact off a
+single weak match. And a workflow isn't one lookup — `domain-osint`, for
+example, fans out across several techniques at once:
+
+```mermaid
+flowchart TD
+    D([domain-osint]) --> W[whois-dns-recon]
+    D --> CT[certificate-transparency]
+    D --> WB[wayback-archives]
+    D --> GH[github-git-recon]
+    CT --> SUB[subdomains]
+    SUB --> SH[shodan-censys-recon]
+    W --> OWN[registrant] -.pivot.-> CO([company-osint])
+    D --> RPT[[osint-report]]
+    SH --> RPT
+    WB --> RPT
+    GH --> RPT
+```
 
 ## Rules
 
