@@ -3,67 +3,67 @@
   "notGrouped": "bottom",
   "groupings": [
     {
-      "title": "Investigation workflows",
-      "description": "Run these by name to drive a full investigation end to end.",
+      "title": "Start here — full investigations",
+      "description": "Type one of these by name. Each runs a case end to end: scope gate, collection plan, pivots, sourced report.",
       "skills": [
-        "osint-investigation",
-        "person-osint",
-        "company-osint",
-        "domain-osint",
-        "username-osint",
-        "email-osint",
-        "phone-osint",
-        "geoint-photo",
-        "social-media-osint",
-        "osint-report"
+        "investigate-anything",
+        "find-anyone",
+        "x-ray-a-company",
+        "recon-a-domain-passively",
+        "hunt-a-handle",
+        "what-an-email-reveals",
+        "whose-number-is-this",
+        "where-was-this-taken",
+        "pattern-of-life-from-socials",
+        "write-the-intel-brief"
       ]
     },
     {
-      "title": "Domain & infrastructure",
-      "description": "Passive recon on domains, hosts, and the services behind them.",
+      "title": "Map infrastructure without touching it",
+      "description": "Everything a domain gives away for free — registration, DNS, forgotten subdomains, exposed services, deleted pages, and code.",
       "skills": [
-        "whois-dns-recon",
-        "certificate-transparency",
-        "shodan-censys-recon",
-        "wayback-archives",
-        "google-dorking",
-        "github-git-recon"
+        "who-owns-this-domain",
+        "find-hidden-subdomains",
+        "find-exposed-servers",
+        "read-deleted-pages",
+        "google-like-a-spy",
+        "secrets-in-git-history"
       ]
     },
     {
-      "title": "Identity, people & companies",
-      "description": "Turn selectors into named people and legal entities.",
+      "title": "Put a name to it",
+      "description": "Turn a selector into a real person or a legal entity — brokers, registries, beneficial owners, breach exposure, and the graph that ties them together.",
       "skills": [
-        "people-search-engines",
-        "corporate-registries",
-        "breach-data-analysis",
-        "link-analysis-graphing"
+        "dig-through-data-brokers",
+        "who-really-owns-it",
+        "what-leaked-about-you",
+        "graph-the-network"
       ]
     },
     {
-      "title": "Images & geolocation",
-      "description": "Source, verify, and locate photos and video.",
+      "title": "Where and when was this taken",
+      "description": "Metadata, first publication, geolocation from the pixels, and whether the image is real at all.",
       "skills": [
-        "reverse-image-search",
-        "exif-metadata-analysis",
-        "chronolocation",
-        "media-verification"
+        "find-the-original-image",
+        "secrets-in-file-metadata",
+        "geolocate-from-pixels",
+        "is-this-photo-real"
       ]
     },
     {
-      "title": "Finance & transport",
-      "description": "Follow money on-chain and track aircraft and vessels.",
+      "title": "Follow the money and the movement",
+      "description": "On-chain tracing to the off-ramp where identity attaches, and aircraft and vessels from public transponder feeds.",
       "skills": [
-        "crypto-blockchain-tracing",
-        "flight-vessel-tracking"
+        "follow-the-crypto",
+        "track-planes-and-ships"
       ]
     },
     {
-      "title": "Tradecraft & leaks",
-      "description": "Stay unattributed and monitor where leaks surface.",
+      "title": "Tradecraft — don't get made",
+      "description": "Your attribution surface, research personas that don't leak back to you, and where leaks actually surface.",
       "skills": [
-        "sockpuppet-opsec",
-        "paste-forum-monitoring"
+        "investigate-without-getting-made",
+        "find-leaks-in-the-wild"
       ]
     }
   ]

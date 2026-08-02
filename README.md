@@ -33,10 +33,17 @@ Two kinds:
 You point it at a target. It picks the workflow, chains the techniques, and
 hands back a report where every claim has a source and a confidence level.
 
+These aren't cheat sheets. Every skill carries the tradecraft that separates a
+lead from a finding — where each source lies to you, which results are
+artefacts of how the tool works, and what it takes to call something confirmed.
+Each one ships with `reference/` material too: the query cookbooks, per-country
+indicator guides, registry catalogues, and format tables you'd otherwise keep
+in a browser tab.
+
 ## What a run looks like
 
 ```
-> domain-osint example.com
+> recon-a-domain-passively example.com
 
 scope        passive only, no scanning
 whois        NameCheap, created 2019-03-11, registrant behind privacy guard
@@ -76,22 +83,22 @@ into that repo's `.cursor/skills/`.
 ## Where to start
 
 Pick the workflow that matches whatever you're holding. If you don't know,
-`osint-investigation` routes you.
+`investigate-anything` routes you.
 
 ```mermaid
 flowchart TD
     Q{What do you<br/>already have?}
-    Q -->|a real name| P[person-osint]
-    Q -->|a company / brand| C[company-osint]
-    Q -->|a domain or IP| D[domain-osint]
-    Q -->|a username| U[username-osint]
-    Q -->|an email| E[email-osint]
-    Q -->|a phone number| PH[phone-osint]
-    Q -->|a photo / video| G[geoint-photo]
-    Q -->|a social profile| S[social-media-osint]
-    Q -->|no idea| R([osint-investigation])
+    Q -->|a real name| P[find-anyone]
+    Q -->|a company / brand| C[x-ray-a-company]
+    Q -->|a domain or IP| D[recon-a-domain-passively]
+    Q -->|a username| U[hunt-a-handle]
+    Q -->|an email| E[what-an-email-reveals]
+    Q -->|a phone number| PH[whose-number-is-this]
+    Q -->|a photo / video| G[where-was-this-taken]
+    Q -->|a social profile| S[pattern-of-life-from-socials]
+    Q -->|no idea| R([investigate-anything])
     R -.picks one.-> Q
-    P --> RPT[[osint-report]]
+    P --> RPT[[write-the-intel-brief]]
     C --> RPT
     D --> RPT
     U --> RPT
@@ -105,39 +112,39 @@ flowchart TD
 
 | Skill | Does |
 |-------|------|
-| `osint-investigation` | Router. Not sure where to start? Start here. |
-| `person-osint` | Profile an individual from public data |
-| `company-osint` | Due diligence — entity, people, infra, risk |
-| `domain-osint` | Passive recon on a domain, site, or IP |
-| `username-osint` | Chase a handle across hundreds of platforms |
-| `email-osint` | Validate, find linked accounts and breaches |
-| `phone-osint` | Line type, carrier, messaging apps, owner |
-| `geoint-photo` | Where and when was this taken |
-| `social-media-osint` | Network, content, location, pattern of life |
-| `osint-report` | Turn the findings into a sourced brief |
+| `investigate-anything` | Router. Scope gate, collection plan, source grading, and it picks the workflow. |
+| `find-anyone` | Profile an individual — and survive the name-collision problem |
+| `x-ray-a-company` | Due diligence — entity, ownership, people, infra, risk |
+| `recon-a-domain-passively` | Map a domain, site, or IP without sending it a packet |
+| `hunt-a-handle` | Chase a handle across hundreds of platforms, then prove it's the same person |
+| `what-an-email-reveals` | Validate it, find the accounts it registered, pivot to the owner |
+| `whose-number-is-this` | Line type, carrier, VoIP detection, messaging-app exposure |
+| `where-was-this-taken` | Metadata, provenance, geolocation, and time — in that order |
+| `pattern-of-life-from-socials` | Network, content, and posting rhythm — and what that reveals |
+| `write-the-intel-brief` | Turn findings into a sourced brief that separates fact from inference |
 
 ## Techniques — the agent pulls these in as needed
 
 | Skill | For |
 |-------|-----|
-| `reverse-image-search` | Source of an image across Yandex, Lens, Bing, TinEye |
-| `exif-metadata-analysis` | GPS, timestamps, author, software from files |
-| `whois-dns-recon` | Registration and DNS records |
-| `certificate-transparency` | Subdomains from CT logs (crt.sh) |
-| `wayback-archives` | Deleted and historical pages |
-| `google-dorking` | Search operators that find the buried stuff |
-| `github-git-recon` | People and leaked secrets in repos and git history |
-| `chronolocation` | Geolocate and time-stamp imagery from clues alone |
-| `sockpuppet-opsec` | Not getting made while you look |
-| `breach-data-analysis` | HIBP and dumps |
-| `crypto-blockchain-tracing` | Follow BTC/ETH wallets |
-| `flight-vessel-tracking` | Planes (ADS-B) and ships (AIS) |
-| `shodan-censys-recon` | Exposed hosts and services, without scanning |
-| `paste-forum-monitoring` | Pastes, forums, Telegram leaks |
-| `media-verification` | Deepfakes, edits, recycled photos |
-| `people-search-engines` | Data brokers and public records |
-| `corporate-registries` | Companies, officers, beneficial owners |
-| `link-analysis-graphing` | Wire the findings into a graph |
+| `find-the-original-image` | First publication of an image, across Yandex, Lens, Bing, TinEye |
+| `secrets-in-file-metadata` | GPS, device serials, authors, and edit chains in files and documents |
+| `who-owns-this-domain` | WHOIS/RDAP, DNS, and the vendors an SPF record gives away |
+| `find-hidden-subdomains` | Certificate transparency, passive DNS, and the hosts that no longer resolve |
+| `read-deleted-pages` | Wayback CDX, archive.today, and getting the raw capture |
+| `google-like-a-spy` | Operators that still work, on the engines that still honour them |
+| `secrets-in-git-history` | Author emails, deleted-fork data, and credentials that never touched HEAD |
+| `geolocate-from-pixels` | Bollards, plates, shadows, sun angle — location and time from the frame alone |
+| `investigate-without-getting-made` | Your attribution surface, and the persona that doesn't leak back to you |
+| `what-leaked-about-you` | Breach exposure, k-anonymity lookups, and why you never touch the credential |
+| `follow-the-crypto` | Clustering, change addresses, and the off-ramp where identity attaches |
+| `track-planes-and-ships` | ICAO hex vs tail number, IMO vs MMSI, and who's gone dark |
+| `find-exposed-servers` | Shodan and Censys queries, favicon hashes, origin IPs behind the CDN |
+| `find-leaks-in-the-wild` | Pastes, forums, Telegram — and telling a fresh leak from a recycled combolist |
+| `is-this-photo-real` | Provenance first, pixels last, and why ELA is usually read wrong |
+| `dig-through-data-brokers` | Broker records as leads, plus the FCRA line you don't cross |
+| `who-really-owns-it` | Registries, filings, beneficial ownership, and the nominee problem |
+| `graph-the-network` | A schema, a source on every edge, and the bridging node you'd otherwise miss |
 
 ## How a case actually moves
 
@@ -147,7 +154,7 @@ can unfold like this:
 
 ```mermaid
 flowchart LR
-    E[email] --> B[breach-data-analysis]
+    E[email] --> B[what-leaked-about-you]
     E --> V[validate + Gravatar]
     B --> U[reused username]
     B --> N[name / fields leaked]
@@ -159,23 +166,23 @@ flowchart LR
     N --> PR{{corroborated identity}}
     GEO --> PR
     GH --> PR
-    PR --> RPT[[osint-report]]
+    PR --> RPT[[write-the-intel-brief]]
 ```
 
 Every hop is one of the technique skills; nothing gets called a fact off a
-single weak match. And a workflow isn't one lookup — `domain-osint`, for
+single weak match. And a workflow isn't one lookup — `recon-a-domain-passively`, for
 example, fans out across several techniques at once:
 
 ```mermaid
 flowchart TD
-    D([domain-osint]) --> W[whois-dns-recon]
-    D --> CT[certificate-transparency]
-    D --> WB[wayback-archives]
-    D --> GH[github-git-recon]
+    D([recon-a-domain-passively]) --> W[who-owns-this-domain]
+    D --> CT[find-hidden-subdomains]
+    D --> WB[read-deleted-pages]
+    D --> GH[secrets-in-git-history]
     CT --> SUB[subdomains]
-    SUB --> SH[shodan-censys-recon]
-    W --> OWN[registrant] -.pivot.-> CO([company-osint])
-    D --> RPT[[osint-report]]
+    SUB --> SH[find-exposed-servers]
+    W --> OWN[registrant] -.pivot.-> CO([x-ray-a-company])
+    D --> RPT[[write-the-intel-brief]]
     SH --> RPT
     WB --> RPT
     GH --> RPT
