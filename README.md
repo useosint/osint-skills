@@ -1,4 +1,20 @@
-# OSINT Skills
+<div align="center">
+
+# 🕵️ OSINT Skills
+
+**Open-source intelligence, run by your AI agent.**
+
+Reconnaissance · Attribution · GEOINT · Breach checks · Due diligence
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Skills](https://img.shields.io/badge/skills-28-brightgreen.svg)](#workflows--you-type-these)
+[![Works with](https://img.shields.io/badge/Cursor%20·%20Claude%20·%20agents-black.svg?logo=anthropic)](#install)
+[![Ethics](https://img.shields.io/badge/authorized%20use%20only-red.svg)](ETHICS.md)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](CONTRIBUTING.md)
+
+</div>
+
+---
 
 28 skills that let Cursor, Claude, and other coding agents actually run an
 open-source-intelligence investigation — pivot from an email to a breach to a
