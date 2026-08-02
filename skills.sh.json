@@ -1,0 +1,70 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Investigation workflows",
+      "description": "Run these by name to drive a full investigation end to end.",
+      "skills": [
+        "osint-investigation",
+        "person-osint",
+        "company-osint",
+        "domain-osint",
+        "username-osint",
+        "email-osint",
+        "phone-osint",
+        "geoint-photo",
+        "social-media-osint",
+        "osint-report"
+      ]
+    },
+    {
+      "title": "Domain & infrastructure",
+      "description": "Passive recon on domains, hosts, and the services behind them.",
+      "skills": [
+        "whois-dns-recon",
+        "certificate-transparency",
+        "shodan-censys-recon",
+        "wayback-archives",
+        "google-dorking",
+        "github-git-recon"
+      ]
+    },
+    {
+      "title": "Identity, people & companies",
+      "description": "Turn selectors into named people and legal entities.",
+      "skills": [
+        "people-search-engines",
+        "corporate-registries",
+        "breach-data-analysis",
+        "link-analysis-graphing"
+      ]
+    },
+    {
+      "title": "Images & geolocation",
+      "description": "Source, verify, and locate photos and video.",
+      "skills": [
+        "reverse-image-search",
+        "exif-metadata-analysis",
+        "chronolocation",
+        "media-verification"
+      ]
+    },
+    {
+      "title": "Finance & transport",
+      "description": "Follow money on-chain and track aircraft and vessels.",
+      "skills": [
+        "crypto-blockchain-tracing",
+        "flight-vessel-tracking"
+      ]
+    },
+    {
+      "title": "Tradecraft & leaks",
+      "description": "Stay unattributed and monitor where leaks surface.",
+      "skills": [
+        "sockpuppet-opsec",
+        "paste-forum-monitoring"
+      ]
+    }
+  ]
+}
