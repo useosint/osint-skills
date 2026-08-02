@@ -147,19 +147,18 @@ Each of these ingests a different corpus and answers a question Google cannot.
   academic aggregators full-text index uploads, surfacing a company name buried
   in a PDF that appears nowhere on its own domain.
 - **Raw-HTML indexes.** Publicwww and similar search page source, letting you
-  pivot on analytics IDs and tag-manager containers. A shared tracker ID is far
-  stronger co-ownership evidence than a shared IP: one account configured both.
+  pivot on analytics IDs and tag-manager containers. A shared tracker ID beats a
+  shared IP as co-ownership evidence: one account configured both.
 - **Archive indexes.** The Wayback CDX API and Common Crawl index are queryable
   URL corpora rather than ranked search, enumerating paths a crawler observed
-  including long-removed ones. Use `read-deleted-pages`.
-- **Service scanners** index hosts, not pages — see `find-exposed-servers`.
-  **Leak corpora** are barely indexed by the majors — `find-leaks-in-the-wild`.
+  including long-removed ones (`read-deleted-pages`). Scanners index hosts, not
+  pages (`find-exposed-servers`); leak corpora, `find-leaks-in-the-wild`.
 
 ## Where this goes wrong
 
-- **The query you typed is not the query that ran.** Stemming, synonym
-  expansion, spell correction and term dropping are the default. Without
-  Verbatim a null result is meaningless.
+- **The query you typed is not the query that ran.** Stemming, synonyms, spell
+  correction and term dropping are the default; without Verbatim a null result
+  is meaningless.
 - **Zero results means one index said no** — a statement about that engine's
   crawl and operator support, not about the web. Absence needs three engines and
   an archive before you write it down.
@@ -193,8 +192,8 @@ Each of these ingests a different corpus and answers a question Google cannot.
 - **Rejected** — a match that survives only without Verbatim, or a mention on a
   page whose content is machine-generated name-scraping.
 
-Cite URL, engine, exact query string, and retrieval date. A result nobody can
-re-run is not evidence.
+Cite URL, engine, query string and retrieval date. A result nobody can re-run is
+not evidence.
 
 ## Worked example
 
@@ -236,8 +235,8 @@ Grade: role **confirmed**, on two documents both retrieved and read. Identity
 
 Automated querying breaches the terms of every major engine. That is a contract
 matter and the usual consequence is a block — but defeating those blocks by
-rotating IPs or solving CAPTCHAs programmatically is circumvention of a
-technical access control, a more serious question in several jurisdictions.
+rotating IPs or solving CAPTCHAs programmatically is circumvention of a technical
+access control, a more serious question in several jurisdictions.
 
 Finding an exposed file confers no authorization to retrieve it. The result is
 public; the file behind it may still be a protected computer under
@@ -246,6 +245,6 @@ authorized assessment, document it, do not exfiltrate it, report through the
 agreed channel. Outside one, notify the operator or a national CERT and stop.
 
 Indexed personal data is still personal data — search does not launder it.
-De-indexing requests also make some material deliberately absent from European
-result sets while present elsewhere, so compare regional result sets before
-concluding anything is gone. Minimise per [../../ETHICS.md](../../ETHICS.md).
+De-indexing requests also make material deliberately absent from European result
+sets while present elsewhere, so compare regions before concluding anything is
+gone. Minimise per [../../ETHICS.md](../../ETHICS.md).
