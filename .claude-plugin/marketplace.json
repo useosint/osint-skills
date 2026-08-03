@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "useosint",
+  "owner": {
+    "name": "useOSINT",
+    "url": "https://useosint.com"
+  },
+  "metadata": {
+    "description": "Open-source intelligence tradecraft for agents, from useOSINT.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "useosint",
+      "source": "./",
+      "description": "29 investigation workflows for people, companies, domains, images, phones, emails, usernames, crypto and vessels — scope-gated, source-graded, and built for due diligence, KYB, fraud and attack-surface work.",
+      "version": "1.0.0",
+      "author": {
+        "name": "useOSINT",
+        "url": "https://useosint.com"
+      },
+      "homepage": "https://docs.useosint.com",
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "osint",
+        "investigation",
+        "due-diligence",
+        "kyb",
+        "threat-intelligence",
+        "fraud",
+        "verification"
+      ]
+    }
+  ]
+}

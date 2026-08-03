@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin.json",
+  "name": "useosint",
+  "version": "1.0.0",
+  "description": "Open-source intelligence tradecraft for agents: 29 investigation workflows covering people, companies, domains, images, phones, emails, usernames, crypto and vessels. Every workflow sets an authorised scope before collecting, sources each claim independently, and grades identity attribution separately from the claim itself. Built for due diligence, KYB and UBO verification, fraud and business email compromise investigation, sanctions screening, attack-surface review, and journalism.",
+  "author": {
+    "name": "useOSINT",
+    "url": "https://useosint.com"
+  },
+  "homepage": "https://docs.useosint.com",
+  "repository": "https://github.com/useosint/osint-skills",
+  "license": "MIT",
+  "keywords": [
+    "osint",
+    "investigation",
+    "due-diligence",
+    "kyb",
+    "threat-intelligence",
+    "fraud",
+    "verification",
+    "attack-surface",
+    "compliance",
+    "journalism"
+  ]
+}
