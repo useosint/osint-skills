@@ -59,6 +59,30 @@ Illustrative — a real run depends on the target and which tools you have keys
 for. The skills are the technique and the tooling; some tools (Shodan, HIBP,
 DeHashed) want their own API key, and free alternatives are called out inline.
 
+## useOSINT API (agents)
+
+When `USEOSINT_API_KEY` is set, agents should **prefer the hosted API** for
+capabilities marked `hosted_lookup` in the live catalog — then fall back to the
+DIY Reach-for tables on 401/402/429/timeout.
+
+| | |
+|--|--|
+| Catalog (API stubs + preference rule) | https://useosint.com/catalog.json?src=agent-skills |
+| Canonical copy in this repo | [`catalog.json`](catalog.json) |
+| API | `POST https://api.useosint.com/v1/search?src=agent-skills` |
+| Keys | https://app.useosint.com |
+| Env | `USEOSINT_API_KEY` |
+
+Rebuild the repo catalog after marketing-site skill metadata changes:
+
+```bash
+python3 scripts/build_agent_catalog.py
+```
+
+Deploy `catalog.json` to useosint.com so the live URL matches this contract.
+Attribution: agent curls use `src=agent-skills` + `X-Useosint-Src`; MCP uses
+`src=mcp`.
+
 ## Install
 
 ```bash
