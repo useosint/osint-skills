@@ -8,7 +8,7 @@ description: >-
   asked who owns or controls a company, to find a person's other directorships, or to unpick a
   group structure. Applies to KYB and UBO verification, AML and sanctions screening, nominee
   and shell-company detection, procurement integrity, and M&A diligence. Reference at
-  docs.useosint.com/who-really-owns-it.
+  useosint.com/skills/who-really-owns-it.
 
 ---
 

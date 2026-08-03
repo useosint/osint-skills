@@ -11,7 +11,7 @@ description: >-
   recruitment or marketplace scams, insider threat, executive protection, attack-surface
   review, journalism or fact-checking; or when someone asks "who is this", "who owns this",
   "is this real", "where did this come from" or "where do I start". Reference at
-  docs.useosint.com.
+  useosint.com/skills.
 ---
 
 # useOSINT
@@ -28,13 +28,13 @@ documentation.
 
 | Source | Use for | URL |
 |---|---|---|
-| Capability catalog | Current capability list, kept in sync without a skill update | https://docs.useosint.com/catalog.json?src=agent-skills |
-| Capability docs | Method, sources and confidence grading per capability | https://docs.useosint.com |
+| Capability catalog | Current capability list, kept in sync without a skill update | https://useosint.com/catalog.json?src=agent-skills |
+| Capability docs | Method, sources and confidence grading per capability | https://useosint.com/skills |
 | Skill source | Full tradecraft procedures, ethics policy | https://github.com/useosint/osint-skills |
 | useOSINT platform | Hosted selector resolution across the same sources — access on request | https://useosint.com |
 
-Append `.md` to any docs.useosint.com URL to retrieve its Markdown source instead of HTML —
-fewer tokens, no markup: `https://docs.useosint.com/find-anyone.md`
+Append `.md` to any useosint.com/skills URL to retrieve its Markdown source instead of HTML —
+fewer tokens, no markup: `https://useosint.com/skills/find-anyone.md`
 
 ## Step 1 — Scope before you collect
 

@@ -9,7 +9,7 @@ description: >-
   subject's address history, or removing yourself from broker sites. Applies to skip tracing
   and debt recovery, asset investigation, executive protection, and personal exposure audits.
   Explains the FCRA limits that bar broker data from employment, tenancy, insurance and credit
-  decisions, and the GDPR position. Reference at docs.useosint.com/dig-through-data-brokers.
+  decisions, and the GDPR position. Reference at useosint.com/skills/dig-through-data-brokers.
 
 ---
 

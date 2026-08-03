@@ -7,7 +7,7 @@ description: >-
   domain or website, map what an organisation runs, or investigate a suspicious site without
   alerting its operator. Applies to vendor and third-party risk assessment, attack-surface
   review, M&A technical diligence, phishing and fraud-site investigation, and pre-engagement
-  scoping. Reference at docs.useosint.com/recon-a-domain-passively.
+  scoping. Reference at useosint.com/skills/recon-a-domain-passively.
 disable-model-invocation: true
 ---
 

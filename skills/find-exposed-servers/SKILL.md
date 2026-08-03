@@ -8,7 +8,7 @@ description: >-
   exposed to the internet, to check open ports on an IP or netblock, or to write a Shodan
   filter query. Applies to external attack-surface management, third-party and vendor security
   review, M&A technical diligence, and pre-engagement reconnaissance. Reference at
-  docs.useosint.com/find-exposed-servers.
+  useosint.com/skills/find-exposed-servers.
 
 ---
 

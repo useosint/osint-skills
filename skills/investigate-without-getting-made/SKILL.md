@@ -9,7 +9,7 @@ description: >-
   burner phone or email, or hardening a research VM or browser profile. Applies to covert due
   diligence, insider-threat investigation, source protection in journalism, and
   law-enforcement online work. Reference at
-  docs.useosint.com/investigate-without-getting-made.
+  useosint.com/skills/investigate-without-getting-made.
 
 ---
 

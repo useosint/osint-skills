@@ -8,7 +8,7 @@ description: >-
   Google dork, hunting a leaked document, or searching paste sites and document repositories
   for a name, email or selector. Applies to data-exposure audits, pre-engagement
   reconnaissance, competitive and regulatory research, and insider-leak investigation.
-  Reference at docs.useosint.com/google-like-a-spy.
+  Reference at useosint.com/skills/google-like-a-spy.
 
 ---
 

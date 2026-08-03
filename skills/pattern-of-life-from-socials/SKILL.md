@@ -8,7 +8,7 @@ description: >-
   archiving a profile before it is deleted. Applies to threat assessment and executive
   protection, insider-threat investigation, pre-litigation research, and personal exposure
   audits — with explicit limits on profiling uninvolved third parties. Reference at
-  docs.useosint.com/pattern-of-life-from-socials.
+  useosint.com/skills/pattern-of-life-from-socials.
 disable-model-invocation: true
 ---
 

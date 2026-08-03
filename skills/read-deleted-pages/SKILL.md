@@ -7,7 +7,7 @@ description: >-
   removed posts, pre-redaction wording or old contact details, enumerating every archived URL
   for a domain, or preserving evidence before it disappears. Applies to litigation and
   evidence preservation, regulatory and disclosure review, due diligence on a company's
-  history, and journalism. Reference at docs.useosint.com/read-deleted-pages.
+  history, and journalism. Reference at useosint.com/skills/read-deleted-pages.
 
 ---
 

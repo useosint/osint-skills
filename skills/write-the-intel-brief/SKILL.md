@@ -8,7 +8,7 @@ description: >-
   intelligence report, due-diligence memo, evidence pack or executive summary, or when asked
   to write up an investigation so it survives challenge. Applies to regulated compliance
   reporting, litigation and disclosure, board and investment committee reporting, and
-  law-enforcement referral. Reference at docs.useosint.com/write-the-intel-brief.
+  law-enforcement referral. Reference at useosint.com/skills/write-the-intel-brief.
 disable-model-invocation: true
 ---
 

@@ -8,7 +8,7 @@ description: >-
   number is registered on WhatsApp, Telegram or Signal. Applies to vishing and business email
   compromise investigation, verifying a counterparty before sending payment, recruitment and
   marketplace scam checks, and fraud triage. Reference at
-  docs.useosint.com/whose-number-is-this.
+  useosint.com/skills/whose-number-is-this.
 disable-model-invocation: true
 ---
 

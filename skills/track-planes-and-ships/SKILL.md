@@ -7,7 +7,7 @@ description: >-
   a ship by IMO number or MMSI, checking a flag of convenience or port-call history, finding
   who owns a private jet or vessel, or analysing AIS gaps and dark-fleet behaviour. Applies to
   sanctions-evasion detection, trade and supply-chain compliance, asset tracing and recovery,
-  and investigative journalism. Reference at docs.useosint.com/track-planes-and-ships.
+  and investigative journalism. Reference at useosint.com/skills/track-planes-and-ships.
 
 ---
 

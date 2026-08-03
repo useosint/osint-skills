@@ -8,7 +8,7 @@ description: >-
   dating a file, fingerprinting a camera or phone, or investigating provenance in JPEG, HEIC,
   RAW, MP4, DOCX, XLSX or PDF. Applies to document-provenance disputes, insider-leak
   attribution, evidence handling, and pre-publication redaction checks. Reference at
-  docs.useosint.com/secrets-in-file-metadata.
+  useosint.com/skills/secrets-in-file-metadata.
 
 ---
 

@@ -8,7 +8,7 @@ description: >-
   members and their personal repos, or recovering secrets deleted from HEAD but still present
   in history or forks. Applies to software supply-chain risk, credential exposure response,
   M&A technical diligence, and insider-threat investigation. Reference at
-  docs.useosint.com/secrets-in-git-history.
+  useosint.com/skills/secrets-in-git-history.
 
 ---
 

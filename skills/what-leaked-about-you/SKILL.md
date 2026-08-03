@@ -7,7 +7,7 @@ description: >-
   with, interpreting a combolist or credential dump, assessing credential compromise, or
   auditing your own leaked personal data. Applies to incident response and account-takeover
   triage, executive and VIP protection, pre-employment and vendor risk screening, and personal
-  privacy audits. Reference at docs.useosint.com/what-leaked-about-you.
+  privacy audits. Reference at useosint.com/skills/what-leaked-about-you.
 
 ---
 

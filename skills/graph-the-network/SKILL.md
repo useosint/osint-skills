@@ -8,7 +8,7 @@ description: >-
   an investigation has outgrown a list and needs a graph, or when asked how a set of people,
   companies and domains connect. Applies to fraud-ring and shell-network detection, AML and
   sanctions-evasion analysis, and complex corporate-structure work. Reference at
-  docs.useosint.com/graph-the-network.
+  useosint.com/skills/graph-the-network.
 
 ---
 

@@ -8,7 +8,7 @@ description: >-
   image was taken, confirm or refute a claimed location or date, or authenticate media before
   relying on it. Applies to insurance claims, litigation evidence, disinformation analysis,
   and conflict and human-rights documentation. Reference at
-  docs.useosint.com/where-was-this-taken.
+  useosint.com/skills/where-was-this-taken.
 disable-model-invocation: true
 ---
 

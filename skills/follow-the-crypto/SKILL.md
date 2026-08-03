@@ -8,7 +8,7 @@ description: >-
   Ethereum wallet, investigating where a ransom or scam payment went, or checking an address
   against sanctions listings. Applies to ransomware incident response, AML and sanctions
   compliance, fraud recovery and asset tracing, and financial-crime investigation. Reference
-  at docs.useosint.com/follow-the-crypto.
+  at useosint.com/skills/follow-the-crypto.
 
 ---
 

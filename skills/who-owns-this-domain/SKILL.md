@@ -7,7 +7,7 @@ description: >-
   registrant or nameservers, doing reverse DNS, PTR, ASN or netblock lookups, or hunting
   historical WHOIS and passive DNS. Applies to phishing and brand-abuse takedown,
   domain-dispute and UDRP evidence, vendor verification before payment, and infrastructure
-  attribution. Reference at docs.useosint.com/who-owns-this-domain.
+  attribution. Reference at useosint.com/skills/who-owns-this-domain.
 
 ---
 

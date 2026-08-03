@@ -8,7 +8,7 @@ description: >-
   photo or video, checking for a deepfake or AI-generated image, spotting manipulation, or
   testing whether footage is recycled or miscaptioned. Applies to KYC and onboarding fraud,
   insurance claim review, disinformation analysis, and evidence admissibility. Reference at
-  docs.useosint.com/is-this-photo-real.
+  useosint.com/skills/is-this-photo-real.
 
 ---
 

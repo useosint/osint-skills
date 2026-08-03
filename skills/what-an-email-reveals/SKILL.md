@@ -7,7 +7,7 @@ description: >-
   address exists, finding accounts registered to it, guessing a company's email format, or
   tracing where a suspicious message actually came from. Applies to business email compromise
   and invoice-fraud investigation, phishing triage, vendor-payment verification, and
-  pre-engagement research. Reference at docs.useosint.com/what-an-email-reveals.
+  pre-engagement research. Reference at useosint.com/skills/what-an-email-reveals.
 disable-model-invocation: true
 ---
 

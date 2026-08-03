@@ -8,7 +8,7 @@ description: >-
   "investigate this person or company", "do OSINT on X", "where do I start", or any
   open-source intelligence, due diligence, background or attribution task. Applies across due
   diligence, fraud, threat intelligence, journalism and compliance. Reference at
-  docs.useosint.com/investigate-anything.
+  useosint.com/skills/investigate-anything.
 disable-model-invocation: true
 ---
 

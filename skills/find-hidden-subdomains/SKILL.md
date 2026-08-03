@@ -7,7 +7,7 @@ description: >-
   when looking for staging, dev, admin or VPN hosts, mapping the full hostname footprint of a
   domain, or spotting infrastructure a company forgot it had. Applies to attack-surface
   mapping, vendor and supply-chain security review, brand-infringement discovery, and M&A
-  technical diligence. Reference at docs.useosint.com/find-hidden-subdomains.
+  technical diligence. Reference at useosint.com/skills/find-hidden-subdomains.
 
 ---
 

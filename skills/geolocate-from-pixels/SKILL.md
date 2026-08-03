@@ -8,7 +8,7 @@ description: >-
   or to match a scene against Google Earth, Street View, Yandex Panoramas, Mapillary or
   KartaView. Applies to GEOINT and conflict monitoring, insurance and claims verification,
   journalism fact-checking, and evidence review. Reference at
-  docs.useosint.com/geolocate-from-pixels.
+  useosint.com/skills/geolocate-from-pixels.
 
 ---
 

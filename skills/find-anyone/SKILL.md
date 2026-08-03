@@ -9,7 +9,7 @@ description: >-
   hard-to-reach individual. Applies to counterparty and investor due diligence, fraud and
   asset investigation, journalism, skip tracing, missing persons, pre-employment integrity
   checks on fiduciary roles, and self-exposure audits. Reference at
-  docs.useosint.com/find-anyone.
+  useosint.com/skills/find-anyone.
 disable-model-invocation: true
 ---
 

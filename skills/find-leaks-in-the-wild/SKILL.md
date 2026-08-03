@@ -8,7 +8,7 @@ description: >-
   verifying a breach claim made against your organisation, or setting up ongoing leak
   monitoring. Applies to incident response and breach triage, threat intelligence, brand and
   executive protection, and extortion-claim validation. Reference at
-  docs.useosint.com/find-leaks-in-the-wild.
+  useosint.com/skills/find-leaks-in-the-wild.
 
 ---
 

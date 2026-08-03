@@ -7,7 +7,7 @@ description: >-
   account correlation, nickname and screen-name pivots, or turning a handle into a real name.
   Applies to fraud and synthetic-identity investigation, recruitment and marketplace scam
   checks, trust-and-safety enforcement, insider-threat work, and personal exposure audits.
-  Reference at docs.useosint.com/hunt-a-handle.
+  Reference at useosint.com/skills/hunt-a-handle.
 disable-model-invocation: true
 ---
 

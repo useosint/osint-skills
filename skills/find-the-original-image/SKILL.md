@@ -8,7 +8,7 @@ description: >-
   or reverse-searching a video by keyframes. Applies to romance and investment scam
   investigation, fake-profile and synthetic-identity detection, disinformation and media
   verification, counterfeit and brand-infringement work, and insurance claim review. Reference
-  at docs.useosint.com/find-the-original-image.
+  at useosint.com/skills/find-the-original-image.
 
 ---
 

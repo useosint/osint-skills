@@ -7,7 +7,7 @@ description: >-
   and adverse media. Use when asked to check out, vet or research a company, verify a supplier
   or counterparty before signing or paying, or assess whether a business is real. Applies to
   vendor and third-party risk, KYC and KYB onboarding, M&A and investor diligence, procurement
-  integrity, and shell-company assessment. Reference at docs.useosint.com/x-ray-a-company.
+  integrity, and shell-company assessment. Reference at useosint.com/skills/x-ray-a-company.
 disable-model-invocation: true
 ---
 
