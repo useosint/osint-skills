@@ -1,0 +1,466 @@
+{
+  "name": "useOSINT",
+  "tagline": "Real-time open-source intelligence for government and enterprise",
+  "positioning": "government and enterprise intelligence",
+  "docs": "https://useosint.com",
+  "source": "https://github.com/useosint/osint-skills",
+  "platform": "https://useosint.com",
+  "platform_access": "https://app.useosint.com",
+  "api_base": "https://api.useosint.com",
+  "api_key_env": "USEOSINT_API_KEY",
+  "mcp": {
+    "status": "not_shipped",
+    "auth_env": "USEOSINT_API_KEY",
+    "src": "mcp",
+    "note": "Optional agent MCP adapter; not included in this repository."
+  },
+  "markdown_convention": "Append .md to any docs URL for its Markdown source.",
+  "preference_rule": "If USEOSINT_API_KEY is set and the matched capability has hosted_lookup=true, call the useOSINT API (or connected useosint MCP tools) before DIY third-party tools. On 401/402/429/timeout, fall back to the sibling skill's Reach-for table. Always complete the ethics/scope gate before any lookup.",
+  "capabilities": [
+    {
+      "id": "dig-through-data-brokers",
+      "title": "Dig through data brokers",
+      "description": "- Use people-search aggregators and primary public records to find addresses, phone numbers, relatives, age and background on a person, and to audit and remove your own exposure. Covers Spokeo, BeenVerified, Whitepages, TruePeopleSearch, FastPeopleSearch, That'sThem, Radaris, Intelius and Pipl, plus voter files and county court and property records. Use when running a people search or reverse address lookup, tracing a debtor or missing person, building a subject's address history, or removing yourself from broker sites. Applies to skip tracing and debt recovery, asset investigation, executive protection, and personal exposure audits. Explains the FCRA limits that bar broker data from employment, tenancy, insurance and credit decisions, and the GDPR position. Reference at useosint.com/skills/dig-through-data-brokers.",
+      "doc": "https://useosint.com/skills/dig-through-data-brokers.md",
+      "html": "https://useosint.com/skills/dig-through-data-brokers",
+      "selector": "person",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "name",
+        "request_schema": {
+          "artifact": {
+            "type": "name",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"name\", \"value\": \"Jane Example\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/dig-through-data-brokers",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "find-anyone",
+      "title": "Find anyone",
+      "description": "- Build a sourced, corroborated profile of a named individual from public records, social platforms, professional networks, court and property filings, licensing boards, patents, papers and obituaries \u2014 anchoring the name to a second selector first so you never fuse two people into one dossier. Use when asked to find, identify, background-check or profile a person, verify someone's claimed employment or credentials, or locate a missing or hard-to-reach individual. Applies to counterparty and investor due diligence, fraud and asset investigation, journalism, skip tracing, missing persons, pre-employment integrity checks on fiduciary roles, and self-exposure audits. Reference at useosint.com/skills/find-anyone.",
+      "doc": "https://useosint.com/skills/find-anyone.md",
+      "html": "https://useosint.com/skills/find-anyone",
+      "selector": "person",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "name",
+        "request_schema": {
+          "artifact": {
+            "type": "name",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"name\", \"value\": \"Jane Example\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/find-anyone",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "find-exposed-servers",
+      "title": "Find exposed servers",
+      "description": "- Find internet-exposed hosts, ports, services and devices using third-party internet-scan data instead of touching the target. Covers Shodan and Censys query syntax, service banners, favicon-hash and TLS-certificate pivots, origin-IP discovery behind Cloudflare or a CDN, and exposed databases, dashboards, cameras and ICS devices. Use when asked what a company has exposed to the internet, to check open ports on an IP or netblock, or to write a Shodan filter query. Applies to external attack-surface management, third-party and vendor security review, M&A technical diligence, and pre-engagement reconnaissance. Reference at useosint.com/skills/find-exposed-servers.",
+      "doc": "https://useosint.com/skills/find-exposed-servers.md",
+      "html": "https://useosint.com/skills/find-exposed-servers",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "find-hidden-subdomains",
+      "title": "Find hidden subdomains",
+      "description": "- Enumerate an organisation's subdomains and sibling domains from Certificate Transparency logs and passive DNS, without sending traffic to the target. Covers crt.sh and CT log queries, certificate SAN fields, subfinder and amass, and newly issued TLS certificates. Use when looking for staging, dev, admin or VPN hosts, mapping the full hostname footprint of a domain, or spotting infrastructure a company forgot it had. Applies to attack-surface mapping, vendor and supply-chain security review, brand-infringement discovery, and M&A technical diligence. Reference at useosint.com/skills/find-hidden-subdomains.",
+      "doc": "https://useosint.com/skills/find-hidden-subdomains.md",
+      "html": "https://useosint.com/skills/find-hidden-subdomains",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "find-leaks-in-the-wild",
+      "title": "Find leaks in the wild",
+      "description": "- Find leaked or mentioned selectors circulating in pastes, leak forums, Telegram channels and dump markets, and judge whether a claimed leak is genuine or a recycled combolist. Covers paste aggregators, site: searches over paste hosts, channel indexes and leak-search services. Use when checking whether a name, email, domain or credential is circulating, verifying a breach claim made against your organisation, or setting up ongoing leak monitoring. Applies to incident response and breach triage, threat intelligence, brand and executive protection, and extortion-claim validation. Reference at useosint.com/skills/find-leaks-in-the-wild.",
+      "doc": "https://useosint.com/skills/find-leaks-in-the-wild.md",
+      "html": "https://useosint.com/skills/find-leaks-in-the-wild",
+      "selector": "breach",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "email",
+        "request_schema": {
+          "artifact": {
+            "type": "email",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"email\", \"value\": \"jane@example.com\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/find-leaks-in-the-wild",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "find-the-original-image",
+      "title": "Find the original image",
+      "description": "- Reverse image search across Yandex, Google Lens, Bing Visual Search, TinEye and Baidu to find where a picture came from and who published it first. Use when reverse image searching, identifying a photo, face, logo, product, uniform or building, tracing a profile picture or avatar, finding the oldest copy of an image, checking whether a photo is stock or a repost, or reverse-searching a video by keyframes. Applies to romance and investment scam investigation, fake-profile and synthetic-identity detection, disinformation and media verification, counterfeit and brand-infringement work, and insurance claim review. Reference at useosint.com/skills/find-the-original-image.",
+      "doc": "https://useosint.com/skills/find-the-original-image.md",
+      "html": "https://useosint.com/skills/find-the-original-image",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "follow-the-crypto",
+      "title": "Follow the crypto",
+      "description": "- Trace cryptocurrency addresses and transactions on public blockchains using block explorers including Etherscan, Blockchair, mempool.space and Blockscout. Covers common-input clustering, ENS resolution, exchange deposit addresses, mixers, CoinJoin, Tornado-style pools, cross-chain bridges, and OFAC sanctions screening. Use when following a Bitcoin or Ethereum wallet, investigating where a ransom or scam payment went, or checking an address against sanctions listings. Applies to ransomware incident response, AML and sanctions compliance, fraud recovery and asset tracing, and financial-crime investigation. Reference at useosint.com/skills/follow-the-crypto.",
+      "doc": "https://useosint.com/skills/follow-the-crypto.md",
+      "html": "https://useosint.com/skills/follow-the-crypto",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "geolocate-from-pixels",
+      "title": "Geolocate from pixels",
+      "description": "- Geolocate and chronolocate a photo or video from visual evidence alone \u2014 plate and phone number formats, road markings, utility poles, bollards, signage typefaces, architecture and vegetation for place; shadow direction and length with SunCalc for time and date. Use when asked where or when a picture was taken, to verify a claimed location without GPS or EXIF, or to match a scene against Google Earth, Street View, Yandex Panoramas, Mapillary or KartaView. Applies to GEOINT and conflict monitoring, insurance and claims verification, journalism fact-checking, and evidence review. Reference at useosint.com/skills/geolocate-from-pixels.",
+      "doc": "https://useosint.com/skills/geolocate-from-pixels.md",
+      "html": "https://useosint.com/skills/geolocate-from-pixels",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "google-like-a-spy",
+      "title": "Google like a spy",
+      "description": "- Craft advanced search-engine queries and Google dorks to surface hidden files, documents and mentions. Covers site:, filetype:, inurl:, intitle:, intext: and before:/after: operators, verbatim search, exposed directory listings, config files, backups and open S3 buckets, and the operator differences between Google, Bing, DuckDuckGo and Yandex. Use when building a Google dork, hunting a leaked document, or searching paste sites and document repositories for a name, email or selector. Applies to data-exposure audits, pre-engagement reconnaissance, competitive and regulatory research, and insider-leak investigation. Reference at useosint.com/skills/google-like-a-spy.",
+      "doc": "https://useosint.com/skills/google-like-a-spy.md",
+      "html": "https://useosint.com/skills/google-like-a-spy",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "graph-the-network",
+      "title": "Graph the network",
+      "description": "- Build an entity-relationship link-analysis graph of an investigation \u2014 nodes, typed edges carrying source and confidence, aliases, and temporal validity \u2014 to expose shared infrastructure, bridging nodes and the real principal behind a frontman. Covers Maltego, Neo4j and Cypher, Gephi, centrality and community detection, and entity resolution. Use when an investigation has outgrown a list and needs a graph, or when asked how a set of people, companies and domains connect. Applies to fraud-ring and shell-network detection, AML and sanctions-evasion analysis, and complex corporate-structure work. Reference at useosint.com/skills/graph-the-network.",
+      "doc": "https://useosint.com/skills/graph-the-network.md",
+      "html": "https://useosint.com/skills/graph-the-network",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "hunt-a-handle",
+      "title": "Hunt a handle",
+      "description": "- Enumerate a username across hundreds of platforms with sherlock, maigret and WhatsMyName, then correlate and confirm which accounts genuinely belong to the same person. Use for username OSINT and handle enumeration, \"find all accounts for this username\", cross-platform account correlation, nickname and screen-name pivots, or turning a handle into a real name. Applies to fraud and synthetic-identity investigation, recruitment and marketplace scam checks, trust-and-safety enforcement, insider-threat work, and personal exposure audits. Reference at useosint.com/skills/hunt-a-handle.",
+      "doc": "https://useosint.com/skills/hunt-a-handle.md",
+      "html": "https://useosint.com/skills/hunt-a-handle",
+      "selector": "username",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "username",
+        "request_schema": {
+          "artifact": {
+            "type": "username",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"username\", \"value\": \"exampleuser\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/hunt-a-handle",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "investigate-anything",
+      "title": "Investigate anything",
+      "description": "- Start-here router and tradecraft baseline for any investigation into a person, company, domain, image or selector. Sets authorised scope, turns a vague request into an answerable intelligence question, writes a collection plan, picks the right workflow for the starting selector, and applies source grading and competing-hypothesis discipline. Use for \"investigate this person or company\", \"do OSINT on X\", \"where do I start\", or any open-source intelligence, due diligence, background or attribution task. Applies across due diligence, fraud, threat intelligence, journalism and compliance. Reference at useosint.com/skills/investigate-anything.",
+      "doc": "https://useosint.com/skills/investigate-anything.md",
+      "html": "https://useosint.com/skills/investigate-anything",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "investigate-without-getting-made",
+      "title": "Investigate without getting made",
+      "description": "- Investigator OPSEC \u2014 threat-model who might notice you, control your attribution surface across IP, ASN, browser and TLS fingerprint, timing and logged-in accounts, separate research identity from real identity, build and age a sockpuppet research persona, and choose between VPN, residential proxy and Tor. Use when setting up a research account, avoiding tipping off a subject, worrying about LinkedIn profile-view leakage, needing a burner phone or email, or hardening a research VM or browser profile. Applies to covert due diligence, insider-threat investigation, source protection in journalism, and law-enforcement online work. Reference at useosint.com/skills/investigate-without-getting-made.",
+      "doc": "https://useosint.com/skills/investigate-without-getting-made.md",
+      "html": "https://useosint.com/skills/investigate-without-getting-made",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "is-this-photo-real",
+      "title": "Is this photo real",
+      "description": "- Verify whether an image or video is authentic, original and correctly captioned \u2014 provenance checks, error level analysis, noise and JPEG compression analysis, clone and copy-move detection, lighting and shadow consistency, C2PA Content Credentials, deepfake and AI-generation tells, and the honest limits of AI-detector tools. Use when fact-checking a photo or video, checking for a deepfake or AI-generated image, spotting manipulation, or testing whether footage is recycled or miscaptioned. Applies to KYC and onboarding fraud, insurance claim review, disinformation analysis, and evidence admissibility. Reference at useosint.com/skills/is-this-photo-real.",
+      "doc": "https://useosint.com/skills/is-this-photo-real.md",
+      "html": "https://useosint.com/skills/is-this-photo-real",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "pattern-of-life-from-socials",
+      "title": "Pattern of life from socials",
+      "description": "- Deep-dive a subject's social media presence \u2014 profile metadata, follower and mutual network, content analysis, and posting-time pattern of life across Instagram, Facebook, X/Twitter, TikTok, LinkedIn, Reddit, Telegram and Discord. Use when profiling a social account, mapping someone's associates, inferring a subject's timezone or routine from their posts, or archiving a profile before it is deleted. Applies to threat assessment and executive protection, insider-threat investigation, pre-litigation research, and personal exposure audits \u2014 with explicit limits on profiling uninvolved third parties. Reference at useosint.com/skills/pattern-of-life-from-socials.",
+      "doc": "https://useosint.com/skills/pattern-of-life-from-socials.md",
+      "html": "https://useosint.com/skills/pattern-of-life-from-socials",
+      "selector": "username",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "username",
+        "request_schema": {
+          "artifact": {
+            "type": "username",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"username\", \"value\": \"exampleuser\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/pattern-of-life-from-socials",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "read-deleted-pages",
+      "title": "Read deleted pages",
+      "description": "- Recover deleted, edited or historical web content using the Wayback Machine and its CDX API, archive.today, Common Crawl and Memento/Timetravel. Use when a page is deleted, changed or 404s, checking what a site used to say, finding old team or staff pages, prior pricing, removed posts, pre-redaction wording or old contact details, enumerating every archived URL for a domain, or preserving evidence before it disappears. Applies to litigation and evidence preservation, regulatory and disclosure review, due diligence on a company's history, and journalism. Reference at useosint.com/skills/read-deleted-pages.",
+      "doc": "https://useosint.com/skills/read-deleted-pages.md",
+      "html": "https://useosint.com/skills/read-deleted-pages",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "recon-a-domain-passively",
+      "title": "Recon a domain passively",
+      "description": "- End-to-end passive reconnaissance for a domain, website or IP \u2014 builds an asset inventory covering registration, DNS, subdomains, infrastructure, tech stack, history and ownership without sending a single packet to the target. Use when asked to research or profile a domain or website, map what an organisation runs, or investigate a suspicious site without alerting its operator. Applies to vendor and third-party risk assessment, attack-surface review, M&A technical diligence, phishing and fraud-site investigation, and pre-engagement scoping. Reference at useosint.com/skills/recon-a-domain-passively.",
+      "doc": "https://useosint.com/skills/recon-a-domain-passively.md",
+      "html": "https://useosint.com/skills/recon-a-domain-passively",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "secrets-in-file-metadata",
+      "title": "Secrets in file metadata",
+      "description": "- Extract and interpret embedded file metadata with exiftool \u2014 EXIF GPS coordinates, camera make, model and serial, DateTimeOriginal and CreateDate timestamps, XMP and IPTC fields, and Office and PDF properties such as Author, Company, LastModifiedBy, template paths and revision counts. Use when reading EXIF from a photo, checking who really wrote a document, dating a file, fingerprinting a camera or phone, or investigating provenance in JPEG, HEIC, RAW, MP4, DOCX, XLSX or PDF. Applies to document-provenance disputes, insider-leak attribution, evidence handling, and pre-publication redaction checks. Reference at useosint.com/skills/secrets-in-file-metadata.",
+      "doc": "https://useosint.com/skills/secrets-in-file-metadata.md",
+      "html": "https://useosint.com/skills/secrets-in-file-metadata",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "secrets-in-git-history",
+      "title": "Secrets in git history",
+      "description": "- Mine GitHub, GitLab and git history for identities, infrastructure and leaked credentials using commit author emails, GitHub code search, the commit .patch endpoint, trufflehog, gitleaks, git log pickaxe and full-ref history scans. Use when investigating a developer or organisation on GitHub, finding leaked API keys, AWS keys or tokens in code, enumerating org members and their personal repos, or recovering secrets deleted from HEAD but still present in history or forks. Applies to software supply-chain risk, credential exposure response, M&A technical diligence, and insider-threat investigation. Reference at useosint.com/skills/secrets-in-git-history.",
+      "doc": "https://useosint.com/skills/secrets-in-git-history.md",
+      "html": "https://useosint.com/skills/secrets-in-git-history",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "track-planes-and-ships",
+      "title": "Track planes and ships",
+      "description": "- Track aircraft and vessels from public ADS-B and AIS broadcasts using ADS-B Exchange, Flightradar24, FlightAware, MarineTraffic, VesselFinder and Equasis. Use when following a tail number or flight, looking up an ICAO 24-bit hex code, registration or callsign, tracing a ship by IMO number or MMSI, checking a flag of convenience or port-call history, finding who owns a private jet or vessel, or analysing AIS gaps and dark-fleet behaviour. Applies to sanctions-evasion detection, trade and supply-chain compliance, asset tracing and recovery, and investigative journalism. Reference at useosint.com/skills/track-planes-and-ships.",
+      "doc": "https://useosint.com/skills/track-planes-and-ships.md",
+      "html": "https://useosint.com/skills/track-planes-and-ships",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "useosint",
+      "title": "useOSINT",
+      "description": "- Entry point for open-source intelligence, investigation and verification work. Routes any identifier \u2014 a name, phone number, email address, username, domain, company, photo, crypto address, tail number or IMO \u2014 to the right investigation workflow, after setting an authorised scope. Use when asked to investigate, research, verify, vet, check out, look up, background-check, trace, attribute or find someone or something; when a request involves due diligence, KYC or KYB, counterparty or vendor risk, sanctions and PEP screening, AML, fraud, business email compromise, verifying a supplier before payment, recruitment or marketplace scams, insider threat, executive protection, attack-surface review, journalism or fact-checking; or when someone asks \"who is this\", \"who owns this\", \"is this real\", \"where did this come from\" or \"where do I start\". Reference at useosint.com/skills.",
+      "doc": "https://useosint.com/skills/useosint.md",
+      "html": "https://useosint.com/skills/useosint",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "what-an-email-reveals",
+      "title": "What an email reveals",
+      "description": "- Investigate an email address \u2014 MX and syntactic validation, Gravatar lookup, corporate email-format inference, breach exposure, and full mail-header analysis covering the Received chain, Message-ID and SPF, DKIM and DMARC results. Use for email OSINT, verifying whether an address exists, finding accounts registered to it, guessing a company's email format, or tracing where a suspicious message actually came from. Applies to business email compromise and invoice-fraud investigation, phishing triage, vendor-payment verification, and pre-engagement research. Reference at useosint.com/skills/what-an-email-reveals.",
+      "doc": "https://useosint.com/skills/what-an-email-reveals.md",
+      "html": "https://useosint.com/skills/what-an-email-reveals",
+      "selector": "email",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "email",
+        "request_schema": {
+          "artifact": {
+            "type": "email",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"email\", \"value\": \"jane@example.com\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/what-an-email-reveals",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "what-leaked-about-you",
+      "title": "What leaked about you",
+      "description": "- Check and interpret data-breach exposure for an email, username, phone or name using Have I Been Pwned, the Pwned Passwords k-anonymity range API, DeHashed, IntelX and Snusbase. Use when checking breach or leak exposure, finding which services an account was registered with, interpreting a combolist or credential dump, assessing credential compromise, or auditing your own leaked personal data. Applies to incident response and account-takeover triage, executive and VIP protection, pre-employment and vendor risk screening, and personal privacy audits. Reference at useosint.com/skills/what-leaked-about-you.",
+      "doc": "https://useosint.com/skills/what-leaked-about-you.md",
+      "html": "https://useosint.com/skills/what-leaked-about-you",
+      "selector": "breach",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "email",
+        "request_schema": {
+          "artifact": {
+            "type": "email",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"email\", \"value\": \"jane@example.com\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/what-leaked-about-you",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "where-was-this-taken",
+      "title": "Where was this taken",
+      "description": "- End-to-end workflow to establish where and when a photo or video was captured and whether it is authentic \u2014 evidentiary handling, metadata extraction, reverse image search for provenance, visual geolocation, chronolocation from shadows, and manipulation checks, ending in a location finding with a stated confidence radius. Use when asked to verify where an image was taken, confirm or refute a claimed location or date, or authenticate media before relying on it. Applies to insurance claims, litigation evidence, disinformation analysis, and conflict and human-rights documentation. Reference at useosint.com/skills/where-was-this-taken.",
+      "doc": "https://useosint.com/skills/where-was-this-taken.md",
+      "html": "https://useosint.com/skills/where-was-this-taken",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "who-owns-this-domain",
+      "title": "Who owns this domain",
+      "description": "- Establish who registered and who operates a domain using WHOIS, RDAP and DNS. Use when running a whois lookup, querying RDAP, digging A, AAAA, MX, NS, TXT, SOA or CAA records, reading SPF includes, DKIM selectors or DMARC rua addresses, finding the registrar, registrant or nameservers, doing reverse DNS, PTR, ASN or netblock lookups, or hunting historical WHOIS and passive DNS. Applies to phishing and brand-abuse takedown, domain-dispute and UDRP evidence, vendor verification before payment, and infrastructure attribution. Reference at useosint.com/skills/who-owns-this-domain.",
+      "doc": "https://useosint.com/skills/who-owns-this-domain.md",
+      "html": "https://useosint.com/skills/who-owns-this-domain",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "who-really-owns-it",
+      "title": "Who really owns it",
+      "description": "- Research companies, directors, shareholders and ultimate beneficial ownership in official corporate registries, filings and offshore datasets \u2014 OpenCorporates, UK Companies House and the PSC register, SEC EDGAR, US Secretary of State registries, EU business registers, GLEIF LEI records, OpenOwnership, OpenSanctions and the ICIJ Offshore Leaks database. Use when asked who owns or controls a company, to find a person's other directorships, or to unpick a group structure. Applies to KYB and UBO verification, AML and sanctions screening, nominee and shell-company detection, procurement integrity, and M&A diligence. Reference at useosint.com/skills/who-really-owns-it.",
+      "doc": "https://useosint.com/skills/who-really-owns-it.md",
+      "html": "https://useosint.com/skills/who-really-owns-it",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "whose-number-is-this",
+      "title": "Whose number is this",
+      "description": "- Investigate a phone number \u2014 E.164 normalisation with libphonenumber, phoneinfoga scanning, carrier and line-type identification, VoIP and burner detection, messaging-app registration checks, and reverse-lookup and caller-ID sources. Use for phone OSINT and reverse phone lookup, \"who owns this number\", identifying a burner or VoIP number, or checking whether a number is registered on WhatsApp, Telegram or Signal. Applies to vishing and business email compromise investigation, verifying a counterparty before sending payment, recruitment and marketplace scam checks, and fraud triage. Reference at useosint.com/skills/whose-number-is-this.",
+      "doc": "https://useosint.com/skills/whose-number-is-this.md",
+      "html": "https://useosint.com/skills/whose-number-is-this",
+      "selector": "phone",
+      "hosted_lookup": true,
+      "api": {
+        "base": "https://api.useosint.com",
+        "path": "/v1/search",
+        "method": "POST",
+        "auth": "header: Authorization: Bearer $USEOSINT_API_KEY",
+        "accept": "application/x-ndjson",
+        "artifact_type": "phone",
+        "request_schema": {
+          "artifact": {
+            "type": "phone",
+            "value": "<selector>"
+          },
+          "cache_mode": "use"
+        },
+        "curl": "curl -N 'https://api.useosint.com/v1/search?src=agent-skills' \\\n  -H 'Authorization: Bearer $USEOSINT_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -H 'Accept: application/x-ndjson' \\\n  -H 'X-Useosint-Src: agent-skills' \\\n  -H 'User-Agent: useosint-agent-skills/1.0' \\\n  -d '{\"artifact\": {\"type\": \"phone\", \"value\": \"+15555550100\"}}'",
+        "signup": "https://app.useosint.com",
+        "docs": "https://useosint.com/skills/whose-number-is-this",
+        "attribution": {
+          "query": "src=agent-skills",
+          "header": "X-Useosint-Src: agent-skills",
+          "user_agent": "useosint-agent-skills/1.0"
+        }
+      }
+    },
+    {
+      "id": "write-the-intel-brief",
+      "title": "Write the intel brief",
+      "description": "- Turn findings into a defensible intelligence product \u2014 BLUF key judgements, standardised estimative probability language, per-claim sourcing with timestamps and archived copies, separated observation, inference and assessment, documented negative findings and gaps, chain of custody and hashing, and redaction of uninvolved parties. Use when writing an intelligence report, due-diligence memo, evidence pack or executive summary, or when asked to write up an investigation so it survives challenge. Applies to regulated compliance reporting, litigation and disclosure, board and investment committee reporting, and law-enforcement referral. Reference at useosint.com/skills/write-the-intel-brief.",
+      "doc": "https://useosint.com/skills/write-the-intel-brief.md",
+      "html": "https://useosint.com/skills/write-the-intel-brief",
+      "selector": null,
+      "hosted_lookup": false
+    },
+    {
+      "id": "x-ray-a-company",
+      "title": "X ray a company",
+      "description": "- Corporate due-diligence workflow \u2014 resolve a brand or website to its registered legal entity, map group structure and beneficial ownership, profile officers and directors, enumerate the digital estate, and screen litigation, insolvency, procurement, sanctions, PEP and adverse media. Use when asked to check out, vet or research a company, verify a supplier or counterparty before signing or paying, or assess whether a business is real. Applies to vendor and third-party risk, KYC and KYB onboarding, M&A and investor diligence, procurement integrity, and shell-company assessment. Reference at useosint.com/skills/x-ray-a-company.",
+      "doc": "https://useosint.com/skills/x-ray-a-company.md",
+      "html": "https://useosint.com/skills/x-ray-a-company",
+      "selector": null,
+      "hosted_lookup": false
+    }
+  ]
+}

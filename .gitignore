@@ -25,5 +25,10 @@ __pycache__/
 venv/
 
 # Tooling / generators — kept local, never shipped with the skills
-scripts/
+scripts/*
+!scripts/build_agent_catalog.py
 *.py
+!scripts/build_agent_catalog.py
+
+# Local MCP package — do not publish to GitHub
+mcp/
