@@ -1,6 +1,16 @@
 ---
 name: investigate-without-getting-made
-description: Investigator OPSEC — threat-model who might notice you, control your attribution surface (IP, ASN, browser and TLS fingerprint, timing, logged-in accounts), separate research identity from real identity, build and age a sockpuppet research persona, and choose between VPN, residential proxy, and Tor. Use for setting up a research account, avoiding tipping off a target, LinkedIn profile-view leakage, burner phone and email for verification, dedicated VM or browser profile, or hardening an investigation environment.
+description: >-
+  Investigator OPSEC — threat-model who might notice you, control your attribution surface
+  across IP, ASN, browser and TLS fingerprint, timing and logged-in accounts, separate
+  research identity from real identity, build and age a sockpuppet research persona, and
+  choose between VPN, residential proxy and Tor. Use when setting up a research account,
+  avoiding tipping off a subject, worrying about LinkedIn profile-view leakage, needing a
+  burner phone or email, or hardening a research VM or browser profile. Applies to covert due
+  diligence, insider-threat investigation, source protection in journalism, and
+  law-enforcement online work. Reference at
+  docs.useosint.com/investigate-without-getting-made.
+
 ---
 
 # Investigate without getting made

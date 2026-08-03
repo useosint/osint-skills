@@ -1,6 +1,15 @@
 ---
 name: who-really-owns-it
-description: Research companies, directors, shareholders, and ultimate beneficial ownership in official corporate registries, filings, and offshore datasets. Covers OpenCorporates, UK Companies House and the PSC register, SEC EDGAR, US Secretary of State registries, EU business registers, GLEIF LEI records, OpenOwnership, OpenSanctions, and the ICIJ Offshore Leaks database. Use for KYB, entity resolution, group structure, nominee and shell detection, or finding a person's other directorships.
+description: >-
+  Research companies, directors, shareholders and ultimate beneficial ownership in official
+  corporate registries, filings and offshore datasets — OpenCorporates, UK Companies House and
+  the PSC register, SEC EDGAR, US Secretary of State registries, EU business registers, GLEIF
+  LEI records, OpenOwnership, OpenSanctions and the ICIJ Offshore Leaks database. Use when
+  asked who owns or controls a company, to find a person's other directorships, or to unpick a
+  group structure. Applies to KYB and UBO verification, AML and sanctions screening, nominee
+  and shell-company detection, procurement integrity, and M&A diligence. Reference at
+  docs.useosint.com/who-really-owns-it.
+
 ---
 
 # Who really owns it

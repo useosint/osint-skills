@@ -1,6 +1,14 @@
 ---
 name: pattern-of-life-from-socials
-description: Deep-dive a subject's social media presence — profile metadata, follower and mutual network, content analysis, and posting-time pattern of life across Instagram, Facebook, X/Twitter, TikTok, LinkedIn, Reddit, Telegram and Discord. Use when profiling a social account, mapping someone's friends and family, inferring a target's timezone, routine, home or workplace from their posts, or archiving a profile before it's deleted.
+description: >-
+  Deep-dive a subject's social media presence — profile metadata, follower and mutual network,
+  content analysis, and posting-time pattern of life across Instagram, Facebook, X/Twitter,
+  TikTok, LinkedIn, Reddit, Telegram and Discord. Use when profiling a social account, mapping
+  someone's associates, inferring a subject's timezone or routine from their posts, or
+  archiving a profile before it is deleted. Applies to threat assessment and executive
+  protection, insider-threat investigation, pre-litigation research, and personal exposure
+  audits — with explicit limits on profiling uninvolved third parties. Reference at
+  docs.useosint.com/pattern-of-life-from-socials.
 disable-model-invocation: true
 ---
 

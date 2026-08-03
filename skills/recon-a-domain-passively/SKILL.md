@@ -1,6 +1,13 @@
 ---
 name: recon-a-domain-passively
-description: End-to-end passive reconnaissance workflow for a domain, website, or IP — builds an asset inventory covering registration, DNS, subdomains, infrastructure, tech stack, history and ownership without sending traffic to the target.
+description: >-
+  End-to-end passive reconnaissance for a domain, website or IP — builds an asset inventory
+  covering registration, DNS, subdomains, infrastructure, tech stack, history and ownership
+  without sending a single packet to the target. Use when asked to research or profile a
+  domain or website, map what an organisation runs, or investigate a suspicious site without
+  alerting its operator. Applies to vendor and third-party risk assessment, attack-surface
+  review, M&A technical diligence, phishing and fraud-site investigation, and pre-engagement
+  scoping. Reference at docs.useosint.com/recon-a-domain-passively.
 disable-model-invocation: true
 ---
 

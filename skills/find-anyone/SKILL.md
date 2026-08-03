@@ -1,6 +1,15 @@
 ---
 name: find-anyone
-description: Workflow to build a sourced, corroborated profile of a named individual from public records, social platforms, professional networks, court and property filings, licensing boards, patents, papers, and obituaries. Use for due diligence, background and fraud investigation, journalism, skip tracing, missing persons, hiring integrity checks, or auditing your own exposure.
+description: >-
+  Build a sourced, corroborated profile of a named individual from public records, social
+  platforms, professional networks, court and property filings, licensing boards, patents,
+  papers and obituaries — anchoring the name to a second selector first so you never fuse two
+  people into one dossier. Use when asked to find, identify, background-check or profile a
+  person, verify someone's claimed employment or credentials, or locate a missing or
+  hard-to-reach individual. Applies to counterparty and investor due diligence, fraud and
+  asset investigation, journalism, skip tracing, missing persons, pre-employment integrity
+  checks on fiduciary roles, and self-exposure audits. Reference at
+  docs.useosint.com/find-anyone.
 disable-model-invocation: true
 ---
 

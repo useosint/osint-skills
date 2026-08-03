@@ -1,6 +1,14 @@
 ---
 name: read-deleted-pages
-description: Recover deleted, edited, or historical web content from web archives using the Wayback Machine, its CDX API, archive.today, Common Crawl, and Memento/Timetravel. Use when a page is deleted, changed, or 404s, checking what a site used to say, finding old team or staff pages, prior pricing, removed posts, pre-redaction wording or old contact details, enumerating every archived URL for a domain, retrieving a raw archived snapshot, or preserving evidence before it disappears.
+description: >-
+  Recover deleted, edited or historical web content using the Wayback Machine and its CDX API,
+  archive.today, Common Crawl and Memento/Timetravel. Use when a page is deleted, changed or
+  404s, checking what a site used to say, finding old team or staff pages, prior pricing,
+  removed posts, pre-redaction wording or old contact details, enumerating every archived URL
+  for a domain, or preserving evidence before it disappears. Applies to litigation and
+  evidence preservation, regulatory and disclosure review, due diligence on a company's
+  history, and journalism. Reference at docs.useosint.com/read-deleted-pages.
+
 ---
 
 # Read deleted pages

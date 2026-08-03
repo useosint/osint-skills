@@ -1,6 +1,15 @@
 ---
 name: google-like-a-spy
-description: Craft advanced search-engine queries and Google dorks to surface hidden files, documents, and mentions. Use when building a Google dork, using search operators (site:, filetype:, inurl:, intitle:, intext:, before:/after:), forcing verbatim/exact-match search, finding exposed directory listings, config files, backups, or open S3 buckets, searching paste sites and document repositories for a name, email, or leaked selector, or comparing Google against Bing, DuckDuckGo, and Yandex operators.
+description: >-
+  Craft advanced search-engine queries and Google dorks to surface hidden files, documents and
+  mentions. Covers site:, filetype:, inurl:, intitle:, intext: and before:/after: operators,
+  verbatim search, exposed directory listings, config files, backups and open S3 buckets, and
+  the operator differences between Google, Bing, DuckDuckGo and Yandex. Use when building a
+  Google dork, hunting a leaked document, or searching paste sites and document repositories
+  for a name, email or selector. Applies to data-exposure audits, pre-engagement
+  reconnaissance, competitive and regulatory research, and insider-leak investigation.
+  Reference at docs.useosint.com/google-like-a-spy.
+
 ---
 
 # Search operators

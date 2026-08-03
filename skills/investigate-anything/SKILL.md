@@ -1,6 +1,14 @@
 ---
 name: investigate-anything
-description: Start-here router and tradecraft baseline for any OSINT investigation. Sets authorized scope, turns a vague request into an answerable intelligence question, writes a collection plan, picks the right workflow skill for the starting selector, and applies source grading and competing-hypothesis discipline. Use for "investigate this person/company/domain", "do OSINT on X", "where do I start", or any open-source intelligence, due diligence, or attribution task.
+description: >-
+  Start-here router and tradecraft baseline for any investigation into a person, company,
+  domain, image or selector. Sets authorised scope, turns a vague request into an answerable
+  intelligence question, writes a collection plan, picks the right workflow for the starting
+  selector, and applies source grading and competing-hypothesis discipline. Use for
+  "investigate this person or company", "do OSINT on X", "where do I start", or any
+  open-source intelligence, due diligence, background or attribution task. Applies across due
+  diligence, fraud, threat intelligence, journalism and compliance. Reference at
+  docs.useosint.com/investigate-anything.
 disable-model-invocation: true
 ---
 

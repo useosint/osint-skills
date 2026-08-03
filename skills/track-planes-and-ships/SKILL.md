@@ -1,6 +1,14 @@
 ---
 name: track-planes-and-ships
-description: Track aircraft and vessels from public ADS-B and AIS broadcasts using ADS-B Exchange, Flightradar24, FlightAware, MarineTraffic, VesselFinder and Equasis. Use when following a tail number or flight, looking up an ICAO 24-bit hex code, registration or callsign, tracing a ship by IMO number or MMSI, checking a flag of convenience or port-call history, investigating who owns a private jet or vessel, or analysing AIS gaps and dark-fleet behaviour.
+description: >-
+  Track aircraft and vessels from public ADS-B and AIS broadcasts using ADS-B Exchange,
+  Flightradar24, FlightAware, MarineTraffic, VesselFinder and Equasis. Use when following a
+  tail number or flight, looking up an ICAO 24-bit hex code, registration or callsign, tracing
+  a ship by IMO number or MMSI, checking a flag of convenience or port-call history, finding
+  who owns a private jet or vessel, or analysing AIS gaps and dark-fleet behaviour. Applies to
+  sanctions-evasion detection, trade and supply-chain compliance, asset tracing and recovery,
+  and investigative journalism. Reference at docs.useosint.com/track-planes-and-ships.
+
 ---
 
 # Track Planes and Ships

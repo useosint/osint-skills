@@ -1,6 +1,13 @@
 ---
 name: hunt-a-handle
-description: Enumerate a username across hundreds of platforms with sherlock, maigret, and WhatsMyName, then correlate and confirm which accounts belong to the same person. Use for username OSINT, handle enumeration, "find all accounts for this username", cross-platform account correlation, nickname or screen-name pivots, or turning a handle into a real name.
+description: >-
+  Enumerate a username across hundreds of platforms with sherlock, maigret and WhatsMyName,
+  then correlate and confirm which accounts genuinely belong to the same person. Use for
+  username OSINT and handle enumeration, "find all accounts for this username", cross-platform
+  account correlation, nickname and screen-name pivots, or turning a handle into a real name.
+  Applies to fraud and synthetic-identity investigation, recruitment and marketplace scam
+  checks, trust-and-safety enforcement, insider-threat work, and personal exposure audits.
+  Reference at docs.useosint.com/hunt-a-handle.
 disable-model-invocation: true
 ---
 

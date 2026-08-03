@@ -1,6 +1,15 @@
 ---
 name: find-the-original-image
-description: Reverse image search across Yandex, Google Lens, Bing Visual Search, TinEye and Baidu to find where a picture came from and who published it first. Use when reverse image searching, identifying a photo, face, logo, product, uniform or building, tracing a profile picture or avatar, finding the oldest copy of an image, checking whether a photo is a stock image or a repost, or reverse searching a video by keyframes.
+description: >-
+  Reverse image search across Yandex, Google Lens, Bing Visual Search, TinEye and Baidu to
+  find where a picture came from and who published it first. Use when reverse image searching,
+  identifying a photo, face, logo, product, uniform or building, tracing a profile picture or
+  avatar, finding the oldest copy of an image, checking whether a photo is stock or a repost,
+  or reverse-searching a video by keyframes. Applies to romance and investment scam
+  investigation, fake-profile and synthetic-identity detection, disinformation and media
+  verification, counterfeit and brand-infringement work, and insurance claim review. Reference
+  at docs.useosint.com/find-the-original-image.
+
 ---
 
 # Find the original image

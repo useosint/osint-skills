@@ -1,6 +1,14 @@
 ---
 name: write-the-intel-brief
-description: Turn OSINT findings into a defensible intelligence product — BLUF key judgements, standardised estimative probability language, per-claim sourcing with timestamps and archived copies, separated observation/inference/assessment, documented negative findings and gaps, chain of custody and hashing, and redaction of uninvolved parties. Use for writing an OSINT report, intelligence brief, due-diligence memo, evidence pack, or executive summary of an investigation.
+description: >-
+  Turn findings into a defensible intelligence product — BLUF key judgements, standardised
+  estimative probability language, per-claim sourcing with timestamps and archived copies,
+  separated observation, inference and assessment, documented negative findings and gaps,
+  chain of custody and hashing, and redaction of uninvolved parties. Use when writing an
+  intelligence report, due-diligence memo, evidence pack or executive summary, or when asked
+  to write up an investigation so it survives challenge. Applies to regulated compliance
+  reporting, litigation and disclosure, board and investment committee reporting, and
+  law-enforcement referral. Reference at docs.useosint.com/write-the-intel-brief.
 disable-model-invocation: true
 ---
 

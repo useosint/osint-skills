@@ -1,6 +1,15 @@
 ---
 name: find-exposed-servers
-description: Find internet-exposed hosts, ports, services and devices using third-party internet-scan data. Use when searching Shodan or Censys, writing Shodan filter queries, reading service banners, checking open ports on an IP or netblock, pivoting on favicon hashes or TLS certificate fingerprints, hunting origin IPs behind Cloudflare or a CDN, or looking for exposed databases, dashboards, cameras and ICS devices without scanning the target.
+description: >-
+  Find internet-exposed hosts, ports, services and devices using third-party internet-scan
+  data instead of touching the target. Covers Shodan and Censys query syntax, service banners,
+  favicon-hash and TLS-certificate pivots, origin-IP discovery behind Cloudflare or a CDN, and
+  exposed databases, dashboards, cameras and ICS devices. Use when asked what a company has
+  exposed to the internet, to check open ports on an IP or netblock, or to write a Shodan
+  filter query. Applies to external attack-surface management, third-party and vendor security
+  review, M&A technical diligence, and pre-engagement reconnaissance. Reference at
+  docs.useosint.com/find-exposed-servers.
+
 ---
 
 # Find exposed servers

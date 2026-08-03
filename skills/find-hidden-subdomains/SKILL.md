@@ -1,6 +1,14 @@
 ---
 name: find-hidden-subdomains
-description: Enumerate an organization's subdomains and sibling domains from Certificate Transparency logs and passive DNS. Use when looking for hidden, staging, dev, or VPN hosts, querying crt.sh or CT logs, reading certificate SAN fields, running subfinder or amass, doing subdomain enumeration or DNS brute-forcing, checking newly issued TLS certificates, or mapping the full hostname footprint of a domain.
+description: >-
+  Enumerate an organisation's subdomains and sibling domains from Certificate Transparency
+  logs and passive DNS, without sending traffic to the target. Covers crt.sh and CT log
+  queries, certificate SAN fields, subfinder and amass, and newly issued TLS certificates. Use
+  when looking for staging, dev, admin or VPN hosts, mapping the full hostname footprint of a
+  domain, or spotting infrastructure a company forgot it had. Applies to attack-surface
+  mapping, vendor and supply-chain security review, brand-infringement discovery, and M&A
+  technical diligence. Reference at docs.useosint.com/find-hidden-subdomains.
+
 ---
 
 # Find hidden subdomains

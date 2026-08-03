@@ -1,6 +1,15 @@
 ---
 name: graph-the-network
-description: Build an entity-relationship link-analysis graph of an investigation — nodes, typed edges with source and confidence, aliases, and temporal validity — to expose shared infrastructure, bridging nodes, and the real principal behind a frontman. Use for link analysis, network mapping, Maltego graphs, Neo4j/Cypher or Gephi work, centrality and community detection, entity resolution and deduplication, or visualising how selectors and pivots connect.
+description: >-
+  Build an entity-relationship link-analysis graph of an investigation — nodes, typed edges
+  carrying source and confidence, aliases, and temporal validity — to expose shared
+  infrastructure, bridging nodes and the real principal behind a frontman. Covers Maltego,
+  Neo4j and Cypher, Gephi, centrality and community detection, and entity resolution. Use when
+  an investigation has outgrown a list and needs a graph, or when asked how a set of people,
+  companies and domains connect. Applies to fraud-ring and shell-network detection, AML and
+  sanctions-evasion analysis, and complex corporate-structure work. Reference at
+  docs.useosint.com/graph-the-network.
+
 ---
 
 # Graph the network

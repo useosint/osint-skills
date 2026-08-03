@@ -1,6 +1,15 @@
 ---
 name: follow-the-crypto
-description: Trace cryptocurrency addresses and transactions on public blockchains using block explorers like Etherscan, Blockchair, mempool.space and Blockscout. Use when following a Bitcoin, Ethereum or EVM wallet, investigating a ransom or scam payment, clustering addresses with common-input heuristics, resolving an ENS name, identifying exchange deposit addresses, mixers, CoinJoin, Tornado-style pools or cross-chain bridges, or checking an address against OFAC sanctions listings.
+description: >-
+  Trace cryptocurrency addresses and transactions on public blockchains using block explorers
+  including Etherscan, Blockchair, mempool.space and Blockscout. Covers common-input
+  clustering, ENS resolution, exchange deposit addresses, mixers, CoinJoin, Tornado-style
+  pools, cross-chain bridges, and OFAC sanctions screening. Use when following a Bitcoin or
+  Ethereum wallet, investigating where a ransom or scam payment went, or checking an address
+  against sanctions listings. Applies to ransomware incident response, AML and sanctions
+  compliance, fraud recovery and asset tracing, and financial-crime investigation. Reference
+  at docs.useosint.com/follow-the-crypto.
+
 ---
 
 # Follow the Crypto

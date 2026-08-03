@@ -1,6 +1,15 @@
 ---
 name: geolocate-from-pixels
-description: Geolocate and chronolocate a photo or video from visual evidence alone — license plate and phone number formats, road markings, utility poles, bollards, signage typefaces, architecture and vegetation for place; shadow direction and length with SunCalc for time and date. Use for GEOINT and chronolocation work, verifying a claimed location without GPS or EXIF, matching a scene to Google Earth, Street View, Yandex Panoramas, Mapillary or KartaView, or estimating when a picture was taken from shadows, foliage and weather archives.
+description: >-
+  Geolocate and chronolocate a photo or video from visual evidence alone — plate and phone
+  number formats, road markings, utility poles, bollards, signage typefaces, architecture and
+  vegetation for place; shadow direction and length with SunCalc for time and date. Use when
+  asked where or when a picture was taken, to verify a claimed location without GPS or EXIF,
+  or to match a scene against Google Earth, Street View, Yandex Panoramas, Mapillary or
+  KartaView. Applies to GEOINT and conflict monitoring, insurance and claims verification,
+  journalism fact-checking, and evidence review. Reference at
+  docs.useosint.com/geolocate-from-pixels.
+
 ---
 
 # Geolocate from pixels

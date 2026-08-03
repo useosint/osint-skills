@@ -1,6 +1,16 @@
 ---
 name: dig-through-data-brokers
-description: Use people-search aggregators and primary public records to find addresses, phone numbers, relatives, age, and background on a person, and to audit and remove your own exposure. Covers Spokeo, BeenVerified, Whitepages, TruePeopleSearch, FastPeopleSearch, That'sThem, Radaris, Intelius, Pipl, voter files, county court and property records, FCRA and non-FCRA limits, GDPR position, and broker opt-out.
+description: >-
+  Use people-search aggregators and primary public records to find addresses, phone numbers,
+  relatives, age and background on a person, and to audit and remove your own exposure. Covers
+  Spokeo, BeenVerified, Whitepages, TruePeopleSearch, FastPeopleSearch, That'sThem, Radaris,
+  Intelius and Pipl, plus voter files and county court and property records. Use when running
+  a people search or reverse address lookup, tracing a debtor or missing person, building a
+  subject's address history, or removing yourself from broker sites. Applies to skip tracing
+  and debt recovery, asset investigation, executive protection, and personal exposure audits.
+  Explains the FCRA limits that bar broker data from employment, tenancy, insurance and credit
+  decisions, and the GDPR position. Reference at docs.useosint.com/dig-through-data-brokers.
+
 ---
 
 # Dig through data brokers

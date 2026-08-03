@@ -1,6 +1,13 @@
 ---
 name: x-ray-a-company
-description: Corporate due-diligence workflow — resolve a brand or website to its registered legal entity, map group structure and beneficial ownership, profile officers and directors, enumerate the digital estate, and screen litigation, insolvency, procurement, sanctions, PEP, and adverse media. Use for vendor and counterparty risk, KYC/KYB, M&A diligence, investor checks, or shell-company assessment.
+description: >-
+  Corporate due-diligence workflow — resolve a brand or website to its registered legal
+  entity, map group structure and beneficial ownership, profile officers and directors,
+  enumerate the digital estate, and screen litigation, insolvency, procurement, sanctions, PEP
+  and adverse media. Use when asked to check out, vet or research a company, verify a supplier
+  or counterparty before signing or paying, or assess whether a business is real. Applies to
+  vendor and third-party risk, KYC and KYB onboarding, M&A and investor diligence, procurement
+  integrity, and shell-company assessment. Reference at docs.useosint.com/x-ray-a-company.
 disable-model-invocation: true
 ---
 

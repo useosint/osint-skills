@@ -1,6 +1,15 @@
 ---
 name: is-this-photo-real
-description: Verify whether an image or video is authentic, original and correctly captioned — provenance checks, error level analysis, noise and JPEG compression analysis, clone and copy-move detection, lighting and shadow consistency, C2PA Content Credentials, deepfake and AI-generation tells, and the honest limits of AI-detector tools. Use when fact-checking a photo or video, checking for a deepfake or AI-generated image, spotting Photoshop manipulation, testing whether footage is recycled or miscaptioned, or assessing media in a disinformation case.
+description: >-
+  Verify whether an image or video is authentic, original and correctly captioned — provenance
+  checks, error level analysis, noise and JPEG compression analysis, clone and copy-move
+  detection, lighting and shadow consistency, C2PA Content Credentials, deepfake and
+  AI-generation tells, and the honest limits of AI-detector tools. Use when fact-checking a
+  photo or video, checking for a deepfake or AI-generated image, spotting manipulation, or
+  testing whether footage is recycled or miscaptioned. Applies to KYC and onboarding fraud,
+  insurance claim review, disinformation analysis, and evidence admissibility. Reference at
+  docs.useosint.com/is-this-photo-real.
+
 ---
 
 # Is this photo real

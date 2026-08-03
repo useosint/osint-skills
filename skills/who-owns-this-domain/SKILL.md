@@ -1,6 +1,14 @@
 ---
 name: who-owns-this-domain
-description: Establish who registered and who operates a domain using WHOIS, RDAP, and DNS. Use when running a whois lookup, querying RDAP, digging A/AAAA/MX/NS/TXT/SOA/CAA records, reading SPF includes, DKIM selectors or DMARC rua addresses, finding the registrar, registrant, or nameservers, doing reverse DNS/PTR or ASN and netblock lookups, or hunting historical WHOIS and passive DNS for a domain.
+description: >-
+  Establish who registered and who operates a domain using WHOIS, RDAP and DNS. Use when
+  running a whois lookup, querying RDAP, digging A, AAAA, MX, NS, TXT, SOA or CAA records,
+  reading SPF includes, DKIM selectors or DMARC rua addresses, finding the registrar,
+  registrant or nameservers, doing reverse DNS, PTR, ASN or netblock lookups, or hunting
+  historical WHOIS and passive DNS. Applies to phishing and brand-abuse takedown,
+  domain-dispute and UDRP evidence, vendor verification before payment, and infrastructure
+  attribution. Reference at docs.useosint.com/who-owns-this-domain.
+
 ---
 
 # Who owns this domain

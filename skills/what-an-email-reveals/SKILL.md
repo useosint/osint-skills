@@ -1,6 +1,13 @@
 ---
 name: what-an-email-reveals
-description: Investigate an email address — MX and syntactic validation, Gravatar lookup, corporate email-format inference, breach exposure, and full mail-header analysis (Received chain, Message-ID, SPF/DKIM/DMARC). Use for email OSINT, verifying whether an address exists, finding accounts registered to an address, guessing a company's email format, or tracing where a message actually came from.
+description: >-
+  Investigate an email address — MX and syntactic validation, Gravatar lookup, corporate
+  email-format inference, breach exposure, and full mail-header analysis covering the Received
+  chain, Message-ID and SPF, DKIM and DMARC results. Use for email OSINT, verifying whether an
+  address exists, finding accounts registered to it, guessing a company's email format, or
+  tracing where a suspicious message actually came from. Applies to business email compromise
+  and invoice-fraud investigation, phishing triage, vendor-payment verification, and
+  pre-engagement research. Reference at docs.useosint.com/what-an-email-reveals.
 disable-model-invocation: true
 ---
 

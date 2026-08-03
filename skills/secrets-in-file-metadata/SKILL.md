@@ -1,6 +1,15 @@
 ---
 name: secrets-in-file-metadata
-description: Extract and interpret embedded file metadata with exiftool — EXIF GPS coordinates, camera make/model/serial, DateTimeOriginal and CreateDate timestamps, XMP and IPTC fields, and Office/PDF document properties like Author, Company, LastModifiedBy, template paths and revision counts. Use when reading EXIF from a photo, checking who wrote a document, dating a file, fingerprinting a camera or phone, or investigating file provenance in JPEG, HEIC, RAW, MP4, DOCX, XLSX and PDF files.
+description: >-
+  Extract and interpret embedded file metadata with exiftool — EXIF GPS coordinates, camera
+  make, model and serial, DateTimeOriginal and CreateDate timestamps, XMP and IPTC fields, and
+  Office and PDF properties such as Author, Company, LastModifiedBy, template paths and
+  revision counts. Use when reading EXIF from a photo, checking who really wrote a document,
+  dating a file, fingerprinting a camera or phone, or investigating provenance in JPEG, HEIC,
+  RAW, MP4, DOCX, XLSX or PDF. Applies to document-provenance disputes, insider-leak
+  attribution, evidence handling, and pre-publication redaction checks. Reference at
+  docs.useosint.com/secrets-in-file-metadata.
+
 ---
 
 # Secrets in file metadata

@@ -1,6 +1,14 @@
 ---
 name: where-was-this-taken
-description: End-to-end workflow to establish where and when a photo or video was captured and whether it is authentic — evidentiary handling, metadata extraction, reverse image search for provenance, visual geolocation, chronolocation from shadows, and manipulation checks, ending in a location finding with a stated confidence radius.
+description: >-
+  End-to-end workflow to establish where and when a photo or video was captured and whether it
+  is authentic — evidentiary handling, metadata extraction, reverse image search for
+  provenance, visual geolocation, chronolocation from shadows, and manipulation checks, ending
+  in a location finding with a stated confidence radius. Use when asked to verify where an
+  image was taken, confirm or refute a claimed location or date, or authenticate media before
+  relying on it. Applies to insurance claims, litigation evidence, disinformation analysis,
+  and conflict and human-rights documentation. Reference at
+  docs.useosint.com/where-was-this-taken.
 disable-model-invocation: true
 ---
 

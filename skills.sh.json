@@ -4,8 +4,9 @@
   "groupings": [
     {
       "title": "Start here — full investigations",
-      "description": "Type one of these by name. Each runs a case end to end: scope gate, collection plan, pivots, sourced report.",
+      "description": "Start with useosint — it routes any identifier to the right workflow. The rest run a case end to end: scope gate, collection plan, pivots, sourced report.",
       "skills": [
+        "useosint",
         "investigate-anything",
         "find-anyone",
         "x-ray-a-company",

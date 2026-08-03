@@ -1,6 +1,15 @@
 ---
 name: secrets-in-git-history
-description: Mine GitHub, GitLab, and git history for identities, infrastructure, and leaked credentials using commit author emails, GitHub code search, the commit .patch endpoint, trufflehog, gitleaks, git log pickaxe, and full-ref history scans. Use when investigating a developer or organisation on GitHub, finding leaked API keys, AWS access keys or tokens in code, enumerating org members and their personal repos, recovering secrets deleted from HEAD but present in history or forks, or checking exposed .git directories, gists, and CI logs.
+description: >-
+  Mine GitHub, GitLab and git history for identities, infrastructure and leaked credentials
+  using commit author emails, GitHub code search, the commit .patch endpoint, trufflehog,
+  gitleaks, git log pickaxe and full-ref history scans. Use when investigating a developer or
+  organisation on GitHub, finding leaked API keys, AWS keys or tokens in code, enumerating org
+  members and their personal repos, or recovering secrets deleted from HEAD but still present
+  in history or forks. Applies to software supply-chain risk, credential exposure response,
+  M&A technical diligence, and insider-threat investigation. Reference at
+  docs.useosint.com/secrets-in-git-history.
+
 ---
 
 # Secrets in git history

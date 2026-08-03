@@ -1,6 +1,14 @@
 ---
 name: whose-number-is-this
-description: Investigate a phone number — E.164 normalisation with libphonenumber, phoneinfoga scanning, carrier and line-type identification, VoIP and burner detection, messaging-app registration checks, and reverse-lookup and caller-ID sources. Use for phone OSINT, reverse phone lookup, "who owns this number", identifying a burner or VoIP number, or checking whether a number is on WhatsApp, Telegram, or Signal.
+description: >-
+  Investigate a phone number — E.164 normalisation with libphonenumber, phoneinfoga scanning,
+  carrier and line-type identification, VoIP and burner detection, messaging-app registration
+  checks, and reverse-lookup and caller-ID sources. Use for phone OSINT and reverse phone
+  lookup, "who owns this number", identifying a burner or VoIP number, or checking whether a
+  number is registered on WhatsApp, Telegram or Signal. Applies to vishing and business email
+  compromise investigation, verifying a counterparty before sending payment, recruitment and
+  marketplace scam checks, and fraud triage. Reference at
+  docs.useosint.com/whose-number-is-this.
 disable-model-invocation: true
 ---
 

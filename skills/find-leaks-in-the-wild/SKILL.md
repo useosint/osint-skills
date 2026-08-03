@@ -1,6 +1,15 @@
 ---
 name: find-leaks-in-the-wild
-description: Find leaked or mentioned selectors in pastes, leak forums, Telegram channels, and dump markets using paste aggregators, site: searches over paste hosts, channel indexes, and leak-search services. Use when searching Pastebin or other paste sites, monitoring forums or Telegram for a breach, checking whether a name, email, domain, or credential is circulating in a dump, judging whether a claimed leak is genuine or a recycled combolist, or setting up ongoing leak monitoring.
+description: >-
+  Find leaked or mentioned selectors circulating in pastes, leak forums, Telegram channels and
+  dump markets, and judge whether a claimed leak is genuine or a recycled combolist. Covers
+  paste aggregators, site: searches over paste hosts, channel indexes and leak-search
+  services. Use when checking whether a name, email, domain or credential is circulating,
+  verifying a breach claim made against your organisation, or setting up ongoing leak
+  monitoring. Applies to incident response and breach triage, threat intelligence, brand and
+  executive protection, and extortion-claim validation. Reference at
+  docs.useosint.com/find-leaks-in-the-wild.
+
 ---
 
 # Find leaks in the wild

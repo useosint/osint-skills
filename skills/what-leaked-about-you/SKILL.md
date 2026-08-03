@@ -1,6 +1,14 @@
 ---
 name: what-leaked-about-you
-description: Check and interpret data-breach exposure for an email, username, phone, or name using Have I Been Pwned, the Pwned Passwords k-anonymity range API, DeHashed, IntelX, and Snusbase. Use when checking breach or leak exposure, finding which services an account was registered with, interpreting a combolist or credential dump, assessing credential compromise, or doing a self-audit of leaked personal data.
+description: >-
+  Check and interpret data-breach exposure for an email, username, phone or name using Have I
+  Been Pwned, the Pwned Passwords k-anonymity range API, DeHashed, IntelX and Snusbase. Use
+  when checking breach or leak exposure, finding which services an account was registered
+  with, interpreting a combolist or credential dump, assessing credential compromise, or
+  auditing your own leaked personal data. Applies to incident response and account-takeover
+  triage, executive and VIP protection, pre-employment and vendor risk screening, and personal
+  privacy audits. Reference at docs.useosint.com/what-leaked-about-you.
+
 ---
 
 # What leaked about you
